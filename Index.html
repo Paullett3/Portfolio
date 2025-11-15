@@ -4,102 +4,126 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Professional Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <!-- This is the introduction to the header -->
-  <body>
-    <body style="background-color:rgb(194, 189, 222);"></body>
-    <header>
-      <nav>
-<img src="Assets/Images/intro photo.png"alt"Portfolio Introduction photo" width="1300"height"500">
-        <hr>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <nav class="navbar">
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <body style="background-color: rgb(194, 189, 222)">
+    <header class="headerimage">
+      <img
+        src="Assets/Images/pink header.jpg"
+        alt="Portfolio Introduction photo"
+        class="site-logo"
+      />
     </header>
-<!--this is a brief introduction about myself and why i want to code-->
+
     <main>
-      <section id="home">
-        <h1 style="color:indigo">Welcome to My Portfolio</h1>
-        <p>My name is Paullette Ndungu currently doing a six months software engineering bootcamp at Go my code Kenya.With the goal of becoming a backend developer in the near future and mastering different coding languages</p>
-        <p>I am learning  code as a way to break into the tech industry!</p>
-      </section>
-      <section id="about">
-        <h2 style="color: indigo;">About Me</h2>
-        <p>
-          I am a firm believer that learning web development is an essential skill in every career.Coding provides a plaform where we can make tailor made solutions to issues we are facing in Africa.
-        </p>
-<!-- An sample audio-->
-        <h3 style="color: indigo;">Listen to my coding philosophy:</h3>
-        <audio controls>
-          <source src="Assets/Audio/Coding philosophy.mp4" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
+      <div class="home-about-wrapper">
+        <section id="home">
+          <div id="CoderImage">
+            <img
+              src="Assets/Images/Girls who code.png"
+              alt="An animated image of me coding"
+              width="100%"
+              height="auto"
+            />
+          </div>
+        </section>
 
-<p><img src="Assets/Images/Girls who code.png"alt"An animated image of me coding"width= "1200" height="400"></p>
+        <section id="about">
+          <h1 style="color: indigo">Welcome to My Portfolio</h1>
+          <p>
+            My name is Paullette Ndungu currently doing a six months software
+            engineering bootcamp at Go my code Kenya. With the goal of becoming
+            a backend developer in the near future and mastering different
+            coding languages
+          </p>
+          <p>
+            I am learning code as a way to break into the tech industry! and
+            build solutions.
+          </p>
 
-      </section>
-<!-- A list of my beginner projects -->
-      <section id="work">
-        <h4 style="color: indigo;">My Work and Projects</h4>
-        <p>Here are a few projects I've worked on:</p>
+          <h2 style="color: indigo">About Me</h2>
+          <p>
+            I am a firm believer that learning web development is an essential
+            skill in every career.Coding provides a plaform where we can make
+            tailor made solutions to issues we are facing in Africa.
+          </p>
+          <h3 style="color: indigo">Listen to my coding philosophy:</h3>
+          <audio controls>
+            <source
+              src="Assets/Audio/Coding philosophy.mp4"
+              type="audio/mpeg"
+            />
+            Your browser does not support the audio element.
+          </audio>
+        </section>
+      </div>
 
-        <ul>
-          <li>
-            Project Alpha: A simple landing page built with HTML and CSS.
-          </li>
-          <li>
-            Project Beta: Portfolio structure demonstrating semantic HTML.
-          </li>
-          <li>
-            Project Gamma: An unfinished project exploring HTML Forms.
-          </li>
-        </ul>
-      </section>
+      <div class="work-skills-wrapper">
+        <section id="work">
+          <h4 style="color: indigo">My Work and Projects</h4>
+          <p>Here are a few projects I've worked on:</p>
+          <ul>
+            <li>
+              Project Alpha: A simple landing page built with HTML and CSS.
+            </li>
+            <li>
+              Project Beta: Portfolio structure demonstrating semantic HTML.
+            </li>
+            <li>Project Gamma: An unfinished project exploring HTML Forms.</li>
+          </ul>
+        </section>
 
-      <section id="work">
-        <h4 style="color: indigo;"">My Skills Overview</h4>
-        <p>A quick summary of my current technical skills:</p>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Skills</th>
-              <th>Experience Level</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Markup</td>
-              <td>HTML5, Semantic HTML</td>
-              <td>Beginner</td>
-            </tr>
-            <tr>
-              <td>Styling</td>
-              <td>Basic CSS, Selectors</td>
-              <td>Learning</td>
-            </tr>
-            <tr>
-              <td>Tools</td>
-              <td>VS Code, Git Basics</td>
-              <td>Beginner</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!--The section below allows users to leave their contact information-->
-
+        <section id="skills">
+          <h4 style="color: indigo">My Skills Overview</h4>
+          <p>A short summary of my current technical skills</p>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Skills</th>
+                <th>Experience Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Markup</td>
+                <td>HTML5, Semantic HTML</td>
+                <td>Beginner</td>
+              </tr>
+              <tr>
+                <td>Styling</td>
+                <td>Basic CSS, Selectors</td>
+                <td>Learning</td>
+              </tr>
+              <tr>
+                <td>Tools</td>
+                <td>VS Code, Git Basics</td>
+                <td>Beginner</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
       <section id="contact">
-        <h5 style="color: indigo;">Contact Me</h5>
+        <h5 style="color: indigo">Contact Me</h5>
         <p>Send me a message to discuss my work!</p>
-
         <form action="/submit-form" method="post">
-          <hr>
           <div>
             <label for="name">Name:</label>
             <input type="text" id="name" name="user_name" required />
@@ -126,7 +150,7 @@
 
     <footer>
       <p>&copy; 2025 My Professional Portfolio. All rights reserved.</p>
-      <p>Built with **Semantic HTML** by Paullette.</p>
+      <p>Built with <strong>Semantic HTML</strong> by Paullette.</p>
     </footer>
   </body>
 </html>
