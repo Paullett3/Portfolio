@@ -5,6 +5,9 @@ header {
   padding: 10px 20px;
   background-color: rgb(194, 189, 222);
 }
+.body{
+  font-family: Roboto;
+}
 
 .site-logo {
   height: 400px;
@@ -12,11 +15,10 @@ header {
   opacity: 0.5;
 }
 
-.headerimage{
+.headerimage {
   display: flex;
   justify-content: center;
 }
-
 
 .nav {
   display: flex;
@@ -57,7 +59,6 @@ html {
   /* order: 1; */
   flex-direction: column;
   text-align: center;
-  
 }
 .work-skills-wrapper {
   display: flex;
