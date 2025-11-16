@@ -5,9 +5,10 @@ header {
   padding: 10px 20px;
   background-color: rgb(194, 189, 222);
 }
-.body{
-  font-family: Roboto;
+.body {
+   font-family: 'Roboto', sans-serif;
 }
+
 
 .site-logo {
   height: 400px;
